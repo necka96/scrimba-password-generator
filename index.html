@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="holder">
+        <div>
+          <h1>
+            Generate a <br />
+            <span>random password</span>
+          </h1>
+          <small>Never use an insecure password again</small>
+        </div>
+        <form id="form">
+          <div class="field">
+            <h3>Length</h3>
+            <input
+              type="number"
+              name="length"
+              id="length"
+              value="15"
+              min="6"
+              max="20"
+            />
+          </div>
+          <div class="field">
+            <div class="rounded">
+              <input type="checkbox" id="capital" checked />
+              <label for="capital"></label>
+              <h3>Capital letter</h3>
+            </div>
+          </div>
+          <div class="field">
+            <div class="rounded">
+              <input type="checkbox" id="small" checked />
+              <label for="small"></label>
+              <h3>Small letter</h3>
+            </div>
+          </div>
+          <div class="field">
+            <div class="rounded">
+              <input type="checkbox" id="number" />
+              <label for="number"></label>
+              <h3>Numbers</h3>
+            </div>
+          </div>
+          <div class="field">
+            <div class="rounded">
+              <input type="checkbox" id="symbol" />
+              <label for="symbol"></label>
+              <h3>Special Chat</h3>
+            </div>
+          </div>
+          <button class="btn">Generate password</button>
+        </form>
+        <hr />
+        <div class="pass-btn-holder">
+          <button class="passwodr-one pass"></button>
+          <button class="passwodr-two pass"></button>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
